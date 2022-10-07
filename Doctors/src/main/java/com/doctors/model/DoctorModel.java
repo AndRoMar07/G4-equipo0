@@ -3,12 +3,12 @@ package com.doctors.model;
 import javax.persistence.*;
 import java.io.Serializable;
 
+
 @Entity
 @Table(name="doctor")
-
 public class DoctorModel implements Serializable {
     @Id
-    @GeneratedValue (strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
     private String email;
@@ -71,5 +71,4 @@ public class DoctorModel implements Serializable {
                 ", age=" + age +
                 '}';
     }
-
 }
